@@ -1,0 +1,144 @@
+/* Header Styling */
+.header {
+  background: linear-gradient(135deg, lightseagreen, gold);  
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  animation: slideInHeader 1s ease-out; 
+
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color:red;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: logoZoom 5s ease-in-out;  
+}
+
+.logo:hover {
+  transform: scale(1.1);  
+  transition: transform 1s ease-in-out; 
+}
+ 
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  opacity: 0;  
+  animation: fadeInNavLinks 1.5s ease-out forwards;  
+}
+
+.nav-links li {
+  font-size: 1.2rem;
+}
+
+.nav-links a {
+  color: blue;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+ 
+.nav-links a:hover {
+  color: #28a745;  
+  transform: translateY(-3px); 
+  text-decoration: underline; 
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #28a745;
+  bottom: 0;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  left: 0;
+}
+ 
+@keyframes slideInHeader {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+ 
+@keyframes logoZoom {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+ 
+@keyframes fadeInNavLinks {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+ 
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links li {
+    font-size: 1rem;
+  }
+}
+
+/*HomePage*/
+ 
+.home-container p {
+  font-size: 64px;
+  font-weight: bold;
+  color:red;
+  justify-content: center;
+  text-align: center;
+  margin-top: 250px;
+  opacity: 0;  
+  animation: fadeIn 5s ease-out forwards;  
+  transform: translateY(20px); 
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);  
+  }
+} 

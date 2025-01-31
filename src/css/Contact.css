@@ -1,0 +1,287 @@
+/*  
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: pink;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ 
+.contact-container h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: blue;
+}
+ 
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: bold;
+  color: orangered;
+  display: block;
+  margin-bottom: 5px;
+}
+ 
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid wheat;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+ 
+input:focus,
+textarea:focus {
+  border-color: gray;
+  outline: none;
+}
+ 
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+ 
+.status-message {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.status-message:empty {
+  display: none;  
+}
+
+.status-message {
+  color: #333;
+}
+
+.status-message {
+  color: #4CAF50; 
+}
+
+.status-message.failed {
+  color: #f44336; 
+} */
+
+ /* Contact.css */
+.contact-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.info-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  text-align: center;
+}
+
+.info-card h3 {
+  font-size: 20px;
+  margin: 15px 0;
+  color: #333;
+}
+
+.info-card p {
+  font-size: 16px;
+  color: #777;
+}
+
+.icon {
+  font-size: 30px;
+  color: #007BFF;
+}
+
+.post-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .info-card {
+    width: 100%;
+  }
+
+  .icon {
+    font-size: 25px;
+  }
+}
+
+
+/* 
+footer {
+  background-color: #2c3e50;
+  color: aqua;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.foot1 {
+  margin-bottom: 20px;
+}
+
+.foot2 a {
+  margin: 0 15px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.foot2 a:hover {
+  color: #3498db;
+}
+
+.bar {
+  font-size: 14px;
+  color: #bdc3c7;
+}
+
+.bar b {
+  color: #ecf0f1;
+}
+ 
+.fa-brands {
+  font-size: 32px;
+}
+
+@media (max-width: 768px) {
+  .foot2 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .foot2 a {
+    font-size: 28px;
+  }
+
+  .bar p {
+    font-size: 12px;
+  }
+} */
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Styling for the first section of footer */
+.foot1 {
+  margin-bottom: 30px;
+}
+
+/* Styling for the second section of footer (social media icons) */
+.foot2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Social media icons */
+.foot2 a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.foot2 a:hover {
+  color: #4CAF50; /* Change color on hover */
+}
+
+/* Styling for the bar section */
+.bar {
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+/* Copyright text */
+.bar p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.bar b {
+  color: #4CAF50; /* Green color for the designer name */
+}

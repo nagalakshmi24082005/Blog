@@ -1,0 +1,97 @@
+/* Professional styling for the profile update page */
+.profile-container {
+  max-width: 450px;
+  margin: 60px auto;
+  padding: 25px;
+  border-radius: 12px;
+  background: #ffffff48;
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+}
+
+h1 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.success-message {
+  color: #155724;
+  background: #d4edda;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #000000;
+  width: 150px;
+}
+
+input {
+  width: 50px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.update-btn {
+  background: #28a745;
+  color: white;
+  font-weight: bold;
+}
+
+.update-btn:hover {
+  background: #218838;
+}
+
+.logout-btn {
+  background: #dc3545;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 150px;
+}
+
+.logout-btn:hover {
+  background: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .profile-container {
+    max-width: 90%;
+    padding: 20px;
+  }
+}

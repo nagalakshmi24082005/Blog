@@ -1,0 +1,60 @@
+/* General styling for the entire page */
+.index-page-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 0;  
+    background-image: url('ui1.jpg');  
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh;  
+    color: #ffffff;  
+    font-family: Arial, sans-serif;  
+  }
+ 
+  .index-page-container h1 {
+    font-size: 2.5rem; 
+    margin-top: 200px;
+    text-shadow: 2px 2px 4px green;  
+  }
+  
+  .index-page-container p {
+    font-size: 1.2rem;
+    margin-bottom: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  
+  }
+   
+  .index-page-button {
+    background-color: #007BFF;  
+    color: white;  
+    margin-bottom: 50px;
+    padding: 12px 30px;  
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 18px;  
+    transition: background-color 0.3s ease-in-out; 
+    width: fit-content;
+  } 
+  .index-page-button:hover {
+    background-color: #0056b3;  
+  }
+  
+  @media (max-width: 768px) {
+    .index-page-container {
+      padding: 15px;
+    }
+  
+    .index-page-container h1 {
+      font-size: 2rem;  
+    }
+  
+    .index-page-container p {
+      font-size: 1rem; 
+    }
+  
+    .index-page-button {
+      font-size: 16px;  
+      padding: 10px 25px;  
+    }
+  }
+  
